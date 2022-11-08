@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Les Conditions - 1</title>
+    </head>
+    <body>
+
+    <script>
+        /* 1. Déclarer une fonction appelé isTooShort. Cette fonction doit prendre une chaine de caractères comme argument.
+            Si la longueur de la chaine de caractère est inférieur à 20, renvoyé true, sinon renvoyé false. */
+        function isTooShort(elem){
+            if(elem.length < 20){
+                return true
+            }else {
+                return false
+            }
+        }
+        isTooShort('Je suis une superbe chaine de caractères')
+        /* 2. Completer la fonction isTooShort pour qu'elle renvoie -1 si l'argument passé n'est pas une chaine de caractère. */
+        function isTooShort(elem){
+            if(typeof elem != 'string'){
+                return -1;
+            }
+            if(elem.length < 20){
+                return true
+            }else {
+                return false
+            }
+        }
+
+    </script>
+</body>
+</html>

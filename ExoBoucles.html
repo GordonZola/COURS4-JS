@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Les Boucles - 1</title>
+    </head>
+    <body>
+
+    <script>
+        /* 1. Déclaré une variable count avec un entier de votre choix */
+
+        var count = 200;
+
+        /* 2. Écriver une boucle qui doit s'executer tant que i est inférieur à 10 */
+
+        for (var index = 0; index < 10; index++);
+
+        /* 3. À chaque intération de la boucle, ajouter sa propre valeur à count */
+
+        for (var i = 0; i < 10; i++) {
+            count = count + count;
+        }
+        /* 4. Durant la boucle, si la valeur de count dépasse 50000, sorter de la boucle et afficher la valeur de votre itération */
+
+        for (var i = 0; i < 10; i++) {
+            count = count + count;
+            if(count > 50000){
+                console.log(count)
+                break;
+            }
+        }
+
+
+
+        /* 1. Ecrivez une boucle while qui se répetera 10x */
+        
+        var i = 0;
+        while (i < 10) {
+            i++;
+            console.log(i)
+        }
+
+        /* 2. À l'aide de la fonction prompt, écrivez une boucle while qui s'affichera tant que l'utilisateur n'aura pas saisi le mot "exit" */
+
+        var result;
+        while (result != 'exit') {
+            result = prompt('Mot de passe :')
+        }
+
+
+
+    </script>
+</body>
+</html>
